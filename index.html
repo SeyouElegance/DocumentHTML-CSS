@@ -1,192 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      media="screen"
+      title="no title"
+      charset="utf-8"
+    />
+    <link rel="stylesheet" href="./webroot/app.css" />
+    <title>Document Type HTML & CSS pure</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" media="screen" title="no title"
-    charset="utf-8" />
-  <link rel="stylesheet" href="./webroot/app.css" />
-  <script src="app.js"></script>
-  <title>Document Type HTML & CSS pure</title>
-</head>
+  <body>
+    <button
+      id="exitBtn"
+      class="slides-control__exitbtn"
+      aria-label="Exit fullscreen"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="21"
+        height="21"
+        viewBox="0 0 21 21"
+      >
+        <path
+          id="Icon_material-close"
+          data-name="Icon material-close"
+          d="M28.5,9.615,26.385,7.5,18,15.885,9.615,7.5,7.5,9.615,15.885,18,7.5,26.385,9.615,28.5,18,20.115,26.385,28.5,28.5,26.385,20.115,18Z"
+          transform="translate(28.5 -7.5) rotate(90)"
+          fill="#fff"
+        />
+      </svg>
+    </button>
+    <button
+      id="rotationBtn"
+      class="slides-control__rotation"
+      aria-label="Rotate slider"
+      disabled
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="36"
+        height="36"
+        viewBox="0 0 36 36"
+      >
+        <g id="Groupe_1" data-name="Groupe 1" transform="translate(0 0.218)">
+          <g
+            id="Icon_feather-smartphone"
+            data-name="Icon feather-smartphone"
+            transform="translate(-4.274 16.595) rotate(-45)"
+          >
+            <path
+              id="Tracé_1"
+              data-name="Tracé 1"
+              d="M9.67,3H20.517a2.522,2.522,0,0,1,2.17,2.764V27.877a2.522,2.522,0,0,1-2.17,2.764H9.67A2.522,2.522,0,0,1,7.5,27.877V5.764A2.522,2.522,0,0,1,9.67,3Z"
+              transform="translate(0 0)"
+              fill="none"
+              stroke="#fff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </g>
+          <path
+            id="Icon_material-crop-rotate"
+            data-name="Icon material-crop-rotate"
+            d="M11.2,32.235A15.8,15.8,0,0,1,2.25,19.5H0A17.991,17.991,0,0,0,17.925,36c.345,0,.66-.03.99-.045L13.2,30.225ZM18.075,0c-.345,0-.66.03-.99.06L22.8,5.775l2-1.995A15.752,15.752,0,0,1,33.75,16.5H36A17.991,17.991,0,0,0,18.075,0Z"
+            transform="translate(0 -0.218)"
+            fill="#fff"
+          />
+        </g>
+      </svg>
+    </button>
+    <section
+      class="slides"
+      aria-roledescription="Slideshow"
+      aria-label="Description of Carousel"
+    >
+      <div class="slides-control">
+        <button
+          class="slides-control__button slides-prev"
+          aria-controls="slides-items"
+          aria-label="Previous Slide"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="31.504"
+            height="30.698"
+            viewBox="0 0 31.504 30.698"
+          >
+            <path
+              id="Icon_awesome-arrow-up"
+              data-name="Icon awesome-arrow-up"
+              d="M2.454,20.355.893,18.795a1.681,1.681,0,0,1,0-2.384L14.555,2.742a1.681,1.681,0,0,1,2.384,0L30.6,16.4a1.681,1.681,0,0,1,0,2.384l-1.561,1.561a1.689,1.689,0,0,1-2.412-.028l-8.065-8.466V32.063a1.683,1.683,0,0,1-1.687,1.688h-2.25a1.683,1.683,0,0,1-1.687-1.687V11.855L4.866,20.327a1.677,1.677,0,0,1-2.412.028Z"
+              transform="translate(-2.246 31.096) rotate(-90)"
+              fill="#fff"
+            />
+          </svg>
+        </button>
+        <button
+          class="slides-control__button slides-next"
+          aria-controls="slides-items"
+          aria-label="Next Slide"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="31.504"
+            height="30.705"
+            viewBox="0 0 31.504 30.705"
+          >
+            <path
+              id="Icon_awesome-arrow-right"
+              data-name="Icon awesome-arrow-right"
+              d="M13.395,4.7l1.561-1.561a1.681,1.681,0,0,1,2.384,0L31.008,16.8a1.681,1.681,0,0,1,0,2.384L17.339,32.857a1.681,1.681,0,0,1-2.384,0L13.395,31.3a1.689,1.689,0,0,1,.028-2.412L21.9,20.813H1.688A1.683,1.683,0,0,1,0,19.125v-2.25a1.683,1.683,0,0,1,1.688-1.687H21.9L13.423,7.116A1.677,1.677,0,0,1,13.395,4.7Z"
+              transform="translate(0 -2.647)"
+              fill="#fff"
+            />
+          </svg>
+        </button>
+      </div>
+      <!-- slides-items -->
+      <div id="slides-items" class="slides-items">
+        <!-- Slide 1 : image link + caption -->
+        <div
+          class="slide-item slideactive"
+          role="group"
+          aria-roledescription="Slide"
+          aria-label="1 of 3"
+        >
+          <p class="slide-item__author">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="17.95"
+              height="16.389"
+              viewBox="0 0 17.95 16.389"
+            >
+              <path
+                id="Icon_material-add-a-photo"
+                data-name="Icon material-add-a-photo"
+                d="M2.341,3.841V1.5H3.9V3.841H6.243V5.4H3.9V7.743H2.341V5.4H0V3.841ZM4.683,8.524V6.183H7.024V3.841h5.463L13.915,5.4h2.474A1.565,1.565,0,0,1,17.95,6.963v9.365a1.565,1.565,0,0,1-1.561,1.561H3.9a1.565,1.565,0,0,1-1.561-1.561v-7.8Zm5.463,7.024a3.9,3.9,0,1,0-3.9-3.9A3.9,3.9,0,0,0,10.146,15.548Zm-2.5-3.9a2.5,2.5,0,1,0,2.5-2.5A2.495,2.495,0,0,0,7.648,11.646Z"
+                transform="translate(0 -1.5)"
+                fill="#fff"
+              /></svg
+            >author
+          </p>
+          <figure>
+            <img
+              class="slide-image"
+              src="./webroot/assets/img/img3.png"
+              alt="Image 1 alternative"
+              width="1200"
+              height="600"
+            />
+          </figure>
+        </div>
 
-<body>
-  <div class="content">
-    <img src="./webroot/assets/img/anduin.png" alt="Personne sur la montagne" class="content-img--header">
+        <!-- Slide 2 : image + caption -->
+        <div
+          class="slide-item"
+          role="group"
+          aria-roledescription="Slide"
+          aria-label="2 of 3"
+        >
+          <figure>
+            <img
+              class="slide-image"
+              src="./webroot/assets/img/img1.png"
+              alt="Image 2 alternative"
+              width="1200"
+              height="600"
+            />
+          </figure>
+        </div>
 
-    <div class="main-content" role="contentinfo">
-
-
-      <h1 class="content-title">Far Far away behind the word mountains far from the countries Vokalia</h1>
-
-      <hr class="separator" role="separator">
-      <div class="content-persona">
-        <img src="./webroot/assets/img/impressive-moustache.png" alt="">
-        <div class="content-persona--informations">
-          <p>F.Duc <span>à Marseille</span></p>
-          <p>Jeudi 21 juin 2018</p>
+        <!-- Slide 3 : image link -->
+        <div
+          class="slide-item"
+          role="group"
+          aria-roledescription="Slide"
+          aria-label="3 of 3"
+        >
+          <figure>
+            <img
+              class="slide-image"
+              src="./webroot/assets/img/img2.png"
+              alt="Image 3 alternative"
+              width="1200"
+              height="600"
+            />
+          </figure>
         </div>
       </div>
-      <hr class="separator" role="separator">
-      <p class="content-description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur temporibus quidem, perferendis reiciendis at
-        harum ipsum tempora quam, expedita nisi sunt architecto eaque ipsa accusamus cum ex
-        <a href="#"> tempore officia quae.</a>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur temporibus quidem, perferendis reiciendis at
-        harum ipsum tempora quam, expedita nisi sunt architecto eaque ipsa accusamus cum ex tempore officia quae.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur temporibus quidem, <a href="#"> tempore officia
-          quae.</a> at
-        harum ipsum tempora quam, expedita nisi sunt architecto eaque ipsa accusamus cum ex tempore officia quae.
-        Lorem ipsum dolor sit amet consectetur <a href="#"> tempore officia quae.</a> Tenetur temporibus quidem,
-        perferendis reiciendis at
-        harum ipsum tempora quam, expedita nisi sunt architecto eaque ipsa accusamus cum ex tempore officia quae.
-      </p>
-      <h2 class="content-title-citation">
-        <cite>
-          << Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam cum iste earum velit nisi quod accusamus
-            aperiam temporibus prum maxime esse libero?>>
-        </cite>
-      </h2>
+      <!-- end slides-items -->
+    </section>
 
-      <p class="content-description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ducimus. Repellat enim numquam atque dolores
-        provident sit voluptatem <a href="#"> tempore officia quae.</a> adipisci doloribus id nemo quia, rem ullam quae
-        similique tenetur! Adipisci,dipisci
-        doloribus id nemo quia, rem ullam quae similique <a href="#"> tempore officia quae.</a>tenetur! Adipisci harum!
-      </p>
-
-      <hr class="separator" role="separator">
-
-      <div class="container-cards">
-        <div class="card">
-          <img src="./webroot/assets/img/mountains.png" alt="mountains">
-          <div class="card-informations">
-            <h3>A small river named</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit adipisicing elit adipisicing elit adipisicing
-              elit.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./webroot/assets/img/route.png" alt="mountains">
-          <div class="card-informations">
-            <h3>A small river named</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit adipisicing elit adipisicing elit adipisicing
-              elit.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./webroot/assets/img/mountains.png" alt="mountains">
-          <div class="card-informations">
-            <h3>A small river named</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit adipisicing elit adipisicing elit adipisicing
-              elit.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./webroot/assets/img/route.png" alt="mountains">
-          <div class="card-informations">
-            <h3>A small river named</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit adipisicing elit adipisicing elit adipisicing
-              elit.</p>
-          </div>
-        </div>
-      </div>
-
-      <hr class="separator" role="separator">
-
-      <form class="form">
-        <label for="email" class="label-email pt-3">Email</label>
-        <input type="email" id="email" name="email" class="form-email">
-
-        <label for="password" class="label-password pt-3">Password</label>
-        <input type="password" id="password" name="password" class="form-password">
-
-        <button type="submit" class="form-submit">Log In</button>
-      </form>
-    </div>
-
-
-  </div>
-
-  <div class="sidebar">
-    <header>
-      <h1>Consonantia</h1>
-      </header>
-      <div class="block-cards">
-        <img src="./webroot/assets/img/sprinkle.png" alt="persona">
-        <div class="block-cards-informations">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
-          <div class="block-cards-informations--stat">
-
-            <div class="block-cards-informations-colors block-cards-informations-green">
-              62
-            </div>
-            <div class="block-cards-informations-colors block-cards-informations-yellow">
-              42
-            </div>
-            <div class="block-cards-informations-colors block-cards-informations-red">
-              13
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="block-cards">
-        <img src="./webroot/assets/img/sprinkle.png" alt="persona">
-        <div class="block-cards-informations">
-          <p>Lorem ipsum, dolor sit amet consectetur</p>
-          <div class="block-cards-informations--stat">
-
-            <div class="block-cards-informations-colors block-cards-informations-green">
-              62
-            </div>
-            <div class="block-cards-informations-colors block-cards-informations-yellow">
-              42
-            </div>
-            <div class="block-cards-informations-colors block-cards-informations-red">
-              13
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="block-cards">
-        <img src="./webroot/assets/img/sprinkle.png" alt="persona">
-        <div class="block-cards-informations">
-          <p>Lorem ipsum, dolor sit amet consectetur</p>
-          <div class="block-cards-informations--stat">
-
-            <div class="block-cards-informations-colors block-cards-informations-green">
-              62
-            </div>
-            <div class="block-cards-informations-colors block-cards-informations-yellow">
-              42
-            </div>
-            <div class="block-cards-informations-colors block-cards-informations-red">
-              13
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="block-cards">
-        <img src="./webroot/assets/img/sprinkle.png" alt="persona">
-        <div class="block-cards-informations">
-          <p>Lorem ipsum, dolor sit amet consectetur</p>
-          <div class="block-cards-informations--stat">
-
-            <div class="block-cards-informations-colors block-cards-informations-green">
-              62
-            </div>
-            <div class="block-cards-informations-colors block-cards-informations-yellow">
-              42
-            </div>
-            <div class="block-cards-informations-colors block-cards-informations-red">
-              13
-            </div>
-          </div>
-        </div>
-      </div>
-
-  </div>
-
-</body>
-
+    <script src="app.js"></script>
+  </body>
 </html>
+
+<!-- <figcaption>
+<strong>Slide 2 Description.</strong><br><span lang="lat">Venerem elegerit sexus mercenariae tabernaculum matrimonii in conductae post species.</span>
+</figcaption> -->
